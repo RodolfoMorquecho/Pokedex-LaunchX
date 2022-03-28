@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedorTitulo">
+        <div class="encabezado"><h1>Pokédex LaunchX</h1></div>
+    </div>
+    <div class="contenedorPadre">
+        <div class="contenedorIzquierdo"> <!--Primera seccion del pokedex--> 
+            <div class="pokedexIzq">
+                <div class="leds">
+                    <div class="parteUniforme">
+                        <div class="ledGiganteExt">
+                            <div class="ledGiganteInt"></div>
+                        </div>
+                        <div class="ledRojo"></div>
+                        <div class="ledAmarillo"></div>
+                        <div class="ledVerde"></div>
+                    </div>
+                    <div class="parteDeforme">
+                        <div class="parteIzqM">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="parteDerM">
+                            <div class="parteSupM"></div>
+                            <div class="parteInfM">
+                                <div class="circle2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pantalla">
+                    <img src="./assets/imagenPorDefecto/pokeballPortada.png" alt="pokemon" id="pokeImg">
+                    <div class="miniContenedor">
+                        <p class="id" id="id"></p>
+                        <p class="name" id="name"></p>
+                    </div>
+                </div>
+                <div class="botonera">
+                    <button onclick="fetchPokemon()" class="botonBuscar"></button>
+                    <div class="pantallaInput">
+                        <input type="text" placeholder="Ingresa nombre o # de pokémon " id="pokeName" name="pokeName">
+                    </div>
+                    <div class="botonCruz">
+                        <div class="parte1"></div>
+                        <div class="parte2"></div>
+                        <div class="parte3"></div>
+                    </div>
+                </div>
+                <div class="barraLateral">
+                    <div class="circulo1"></div>
+                    <div class="circulo2"></div>
+                    <div class="circulo3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorDerecho">
+            <div class="pokedexDer">
+                <div class="contenedorInformacion">
+                    <p class="tipo" id="tipo"></p>
+                    <textarea readonly="readonly" cols="6" rows="12" class="movs" id="movs" name="movs"></textarea>
+                    <p class="habil" id="habil"></p>
+                    <h3 class="stats" id="stats"></h3>
+                    <p class="hp" id="hp"></p>
+                    <p class="ataque" id="ataque"></p>
+                    <p class="defensa" id="defensa"></p>
+                    <p class="ataquEsp" id="ataquEsp"></p>
+                    <p class="defensaEsp" id="defensaEsp"></p>
+                    <p class="velocidad" id="velocidad"></p>
+                </div>
+                <div class="botonera2">
+                    <div class="ledAzul"></div>
+                    <div class="ledDorado"></div>
+                    <div class="contenedorAltura">
+                        <p class="altura" id="altura"></p>
+                    </div>
+                    <div class="luzVerde"></div>
+                    <div class="luzNaranja"></div>
+                    <div class="contenedorPeso">
+                        <p class="peso" id="peso"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
